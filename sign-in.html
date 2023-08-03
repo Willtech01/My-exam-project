@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+</head>
+<style>
+    body{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgb(5, 77, 185);
+        background-image: url(./image/lab-image.webp)
+        
+        
+    }
+h1{
+    text-align: center;
+    margin-top: -1px;
+    font-size: 60px;
+    color: wheat;
+}
+
+form{
+    
+    background-color: gainsboro;
+    margin: auto;
+    width: 30%;
+    height: 80vh;
+    border-radius: 10px;
+}
+
+input{
+    width: 70%;
+    height: 6vh;
+    border-radius: 5px;
+    border: none;
+    margin-left: 70px;
+   
+}
+
+h2{
+    padding-top: 7%;
+    font-size: 40px;
+    text-align: center;
+   
+}
+
+p{
+    font-size: 20px;
+    text-align: none;
+    margin-left: 70px;
+}
+
+#butt {
+  color: white;
+  background-color: rgb(5, 77, 185);
+  border-radius: 5px;
+  height: 6vh;
+  margin-left: 72px;
+  width: 70%;
+  border: none;
+}
+
+.abutt{
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
+
+.links{
+  margin-left: 80px;
+}
+
+</style>
+<body>
+    <h1>Harvard University</h1>
+
+    <form action="">
+<h2>Web Login Service</h2>
+<p>Please enter your Harvard credentials to <br> access.</p>
+
+        <div class="row my-3">
+            <div class="col-3">
+            </div>
+            <div class="col-9">
+              <input
+              type="build"
+              class="form-control"
+              id=""
+              placeholder="Username"
+            />
+            </div>
+          </div> <br><br>
+
+          <div class="row my-3">
+            <div class="col-3">
+            </div>
+            <div class="col-9">
+              <input
+              type="build"
+              class="form-control"
+              id=""
+              placeholder="Phone number"
+            />
+            </div>
+          </div><br><br>
+
+          <div class="row my-3">
+            <div class="col-3">
+            </div>
+            <div class="col-9">
+              <input
+              type="build"
+              class="form-control"
+              id=""
+              placeholder="Email"
+            />
+            </div>
+          </div><br><br>
+          <div class="createfut">
+            <button id="butt" onclick="show()" ><a class="abutt" href="#">Sign in</a></button>
+          </div><br><br>
+
+          <div class="links">
+            <a style="color: blue;" href="./hgazeta.html">Registration of a new Applicant</a> <br><br>
+            <a href="#">Password recovery</a>
+          </div>
+    </form>
+
+    <div style="display: flex; justify-content: end; margin-top: -80px;margin-right: 80px;">
+                    
+     <div style="margin-top: -80vh;">
+      <button style="border-radius: 5px; background-color: red;">
+        <a style=" margin-bottom: 17px; text-decoration: none; font-size: 25px; color: aliceblue;;
+       " href="./index1.html">Home</a>
+       </button>
+     </div>
+
+    <script>
+
+    function show(){
+          alert('Sign in Successfully')
+  }
+    </script>
+
+
+<!-- 
+<label for="First Name">First Name*</label>
+<input type="text"><br><br>
+<label for="lstname">Last Name*</label>
+<input onclick="write()" type="text"><br><br>
+<label onclick="write()" for="username">Username*</label>
+<input type="text"><br><br>
+<label onclick="write()" for="password">Password*</label>
+<input type="text"><br><br>
+<button onclick="showall()" class="btn">Submit</button>
+</form> -->
+
+
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>

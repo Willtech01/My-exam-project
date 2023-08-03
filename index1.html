@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARVARD UNIVERSITY</title>
+</head>
+<style>
+  .container{
+    background-color: rgba(223, 222, 222, 0.993);
+    /* background-color: rgb(223, 245, 223); */
+  }
+     .menu_bar {
+    position: relative;
+    display: block;
+    width: 30px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    margin-top: 5px;
+  }
+  .menu_bar .bar,
+  .menu_bar:after,
+  .menu_bar:before {
+    width: 25px;
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: black;
+    margin: 5px 25px;
+    transition: 0.4s;
+    border-radius: 1px;
+  }
+  .menu_bar.is-active:before {
+    transform: rotate(45deg) translate(2px, -4px);
+}
+  .menu_bar.is-active:after {
+    transform: rotate(-45deg) translate(9px, 8px);
+    margin-top: -20px;
+  }
+  .menu_bar.is-active .bar {
+    opacity: 0;
+  }
+  .mobile-nav {
+    display: block;
+    position: fixed;
+    right: 0;
+    right: -100%;
+    width: 100%;
+    font-size: 12px;
+    min-height: 100%;
+    z-index: 98;
+    /* background-color: #f1fef4; */
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    padding-top: 10px;
+    margin-top: 35px;
+    opacity: 0.9;
+  }
+  .mobile-nav.is-active {
+    right: 0;
+  }
+  .mobile-nav a {
+    display: grid;
+    margin: 15px;
+    color: #011b33;
+    text-decoration: none;
+    margin-top: 5px;
+    padding: 7px 2px;
+    justify-content: end;
+    margin-right: 100px;
+    font-size: 20px;
+  }
+  /* #log {
+    color: rgb(58, 204, 58);
+  } */
+  #create-border {
+    color: #fff;
+  }
+  .menu-free {
+    display: grid;
+    justify-content: center;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    /* background-color: rgb(58, 204, 58); */
+    /* width: 87px; */
+}
+
+#navbar{
+    background-color: aliceblue;
+    /* height: 12vh; */
+    position: sticky;
+    background-image: url(./image/harvard\ happiness-images.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    /* color: gray; */
+    /* border-image-repeat: inherit; */
+}
+.navhapi{
+  margin-bottom: 200%;
+}
+
+.navhapi{
+  animation-name: move-up;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes move-up {
+0%{
+  opacity: 0;
+ transform: translateY(100%);
+}
+100%{
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+.menu_all{
+  animation-name: move-up;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes move-up {
+0%{
+  opacity: 0;
+ transform: translateY(100%);
+}
+100%{
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+p{
+  font-size: 20px;
+}
+.hug-man{
+  margin-top: 40px;
+}
+
+.hug-man{
+  animation-name: move-up;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes move-up {
+0%{
+  opacity: 0;
+ transform: translateY(100%);
+}
+100%{
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+.howhappy{
+  animation-name: move-up;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes move-up {
+0%{
+  opacity: 0.1;
+ transform: translateY(100%);
+}
+100%{
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+.threestudy{
+  margin-top: 100px;
+
+}
+
+.leardership{
+  display: flex;
+  margin-top: 300px;
+  /* text-align: center; */
+  justify-content: center;
+  justify-content: space-evenly;
+
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+
+
+.learn1{
+  animation-name: move-up;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes move-up {
+0%{
+  opacity: 0.1;
+ transform: translateY(100%);
+}
+100%{
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+.learn2{
+  animation-name: move-up;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes move-up {
+0%{
+  opacity: 0.1;
+ transform: translateY(100%);
+}
+100%{
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+.learn3{
+  animation-name: move-up;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes move-up {
+0%{
+  opacity: 0.1;
+ transform: translateY(100%);
+}
+100%{
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+
+.happiness{
+  animation-name: move-up;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes move-up {
+0%{
+  opacity: 0.1;
+ transform: translateY(100%);
+}
+100%{
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+
+.throw{
+  animation-name: move-up;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes move-up {
+0%{
+  opacity: 0.1;
+ transform: translateY(100%);
+}
+100%{
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+
+
+
+
+
+
+</style>
+<body>
+    <div class="container">
+        <div>
+            <nav id="navbar">
+                <div>
+                    <img style="width: 12%; margin-top: -50px;" src="./image/Harvard-logo.svg" alt="harvard logo">
+                    <div style="margin-left: 145px;margin-top: -79px;">
+                        <h1>HARVARD</h1>
+                        <H5 style="margin-top: -20px;margin-left: 16px;">UNIVERSITY</H5>
+                    </div>
+                </div>
+
+                <div  class="menu_all" style="display: flex; justify-content: end; margin-top: -80px;margin-right: 80px;">
+                    <button class="menu_bar">
+                        <div class="bar"></div>
+                      </button>
+                
+                      <div class="mobile-nav">
+                        <a href="./aboutharv.html">About</a>
+                        <a href="./sign-in.html">Sign in</a>
+                        <a href="./hgazeta.html">Application</a>
+                        <a href="./indexTwo.html">QuestionTwo</a>
+                        <a href="./indexThree.html">QuestionThree</a>
+                      </div>
+
+                      <h2 style="margin-left: 40px; margin-bottom: 17px;"><b>Manu</b></h2>
+                </div>
+
+                <div class="navhapi" style="margin-top: 12%;">
+                  <h1 style="font-size: 100px; text-align: center; margin-bottom: -100px;">
+                    Happiness
+                  </h1> <br>
+                  <!-- <p style="font-size: 20px;text-align: center; margin-bottom: -100px;"> -->
+                    <p style="text-align: center; margin-top: 100px; font-size: 20px;">
+                    What is the key to finding happiness? The Harvard community explores the <br>
+                     physical, mental, social, and spiritual aspects of living a life filled with joy. <br><br>
+                     <a style="color: black; font-size: 20px; text-decoration: none; justify-content: center;" href="#"> <i style="color: rgb(36, 35, 35); font-size: 25px;" class="fa-regular fa-circle-right"></i>
+                      Learn more about the discovery
+                    </a>
+                  </p>
+                 
+                </div>
+            </nav>
+        </div><br><br><br><br>
+
+        <section class="hug-man" style="display: flex; justify-content: center; background-color: rgba(223, 222, 222, 0.993);">
+          <div>
+            <img style="width:  95%; height: 60vh;" src="./image/hug man.webp" alt="">
+          </div>
+           
+
+          <div class="howhappy" style="margin-left: 40px; margin-top: 110px;">
+            <h1>Learn how to be happy</h1>
+            <p>
+             Is there a formula for happiness, and can you apply it to your own life? <br>
+             Professor Arthur Brooks thinks so.
+            </p>
+            <a style="color: black; font-size: 20px; text-decoration: none;" href="#"> <i style="color: rgb(36, 35, 35); font-size: 25px;" class="fa-regular fa-circle-right"></i>
+              Read more from The Harvard Gazette
+            </a>
+          </div>
+        </section>
+
+
+        <section class="threestudy" style="display: flex; justify-content: center; justify-content: space-evenly; margin-left: 30px;">
+          <div class="learn1">
+            <img style="width: 120%; height: 100%; color: white;" src="./image2/study one.jpeg" alt="">
+            <h1>Studying Happiness</h1>
+            <p>
+              Explore ancient Chinese philosophy, ethics,<br>
+               and political theory to challenge your<br>
+                 assumptions of what it means to be  happy, <br>
+                 live a meaningful life and change  the world. <br>
+                 
+            </p>
+            <a style="color: black; font-size: 20px; text-decoration: none;" href="#"> <i style="color: rgb(36, 35, 35); font-size: 25px;" class="fa-regular fa-circle-right"></i>
+              Take the free course
+            </a>
+          </div> 
+
+
+          <div class="learn2">
+            <img style="width: 120%; height: 100%;" src="./image2/study three.jpeg" alt="">
+            <h1>Understanding <br>
+                happiness</h1>
+            <p>
+               Learn how the origin of of joy can improve <br>
+               the way we lead organizations - and our <br>
+               personal live.
+            </p>
+            <a style="color: black; font-size: 20px; text-decoration: none;" href="#"> <i style="color: rgb(36, 35, 35); font-size: 25px;" class="fa-regular fa-circle-right"></i>
+              Explore the origins of joy
+            </a>
+          </div>
+
+
+          <div class="learn3">
+            <img style="width: 120%; height: 100%;" src="./image2/study two.jpeg" alt="">
+            <h1>Practicing happiness</h1>
+            <p>
+               
+              Research shows that short writing <br>
+               exercises reliving happy moments <br>
+                boosted the moods of adults recovering <br>
+                 from addiction.
+            </p>
+            <a style="color: black; font-size: 20px; text-decoration: none;" href="#"> <i style="color: rgb(36, 35, 35); font-size: 25px;" class="fa-regular fa-circle-right"></i>
+              Read about the study
+            </a>
+          </div>
+        </section>
+               
+        <section class="leardership">
+          <div>
+            <h1 style="font-size: 50px; margin-top: -1px; margin-left: -15px;">
+              The Leadership and <br>
+               Happiness Laboratory
+             </h1>
+          </div>  
+          <div>
+            <p style="margin-top: 1px;">
+              The Leadership and Happiness Laboratory conducts research and creates <br>
+              resources for leaders to learn the science of happiness, apply it in their <br>
+              own lives, and share it with others.
+            </p>
+            <a style="color: black; font-size: 20px; text-decoration: none;" href="#"> <i style="color: rgb(36, 35, 35); font-size: 25px;" class="fa-regular fa-circle-right"></i>
+              Learn about the lab
+            </a>
+          </div>
+        </section> <br>
+
+
+        <section>
+          <div style="text-align: center;">
+            <img style="width: 80%; height: 80vh;" src="./image2/reaching-out.webp" alt="">
+          </div>
+
+          <div class="happiness" style="margin-top: -410px; margin-left: 200px; color: rgb(245, 221, 3); ">
+            <h1 style="font-size: 50px; color: rgb(245, 221, 3);">            
+              Managing Happiness
+            </h1>
+            <p style="font-size: 30px;">
+              What if you can will yourself to be happy? This free online course <br>
+               gives participants data-backed strategies to make themselves <br>
+                happier.
+            </p>
+            <a style="color: rgb(245, 221, 3); font-size: 30px; text-decoration: none;" href="#"> <i style="color: rgb(245, 221, 3); font-size: 30px;" class="fa-regular fa-circle-right"></i>
+              Take the course
+            </a>
+          </div>
+        </section>
+
+                <div class="throw" style=" margin-top: 250px; margin-left: 9.5%;">
+                  <h1 style="font-size: 50px;">
+                    Finding happiness in <br>
+                    community
+                  </h1>
+                </div>
+
+        <section class="throw" style="display: flex; justify-content: center;">
+          <div>
+            <img src="./image2/072522_campus_41-736x491.webp" alt="campus">
+            <h1 style="font-size: 40px;">
+              The value of relationships
+            </h1>
+            <p>
+              Robert Waldinger, director of the Harvard Study of Adult Development, says one of the biggest <br>
+              surprises they encountered was that what makes people happy is also what helps keep them <br>
+              healthy—relationshi
+            </p>
+          </div>
+
+          
+
+
+          <div style="margin-left: 30px; margin-top: -20px;">
+            <div style="display: flex;">
+              <h2></h2>
+                <p>
+                  <b>A pet can change your life</b> <br><br>
+                  Animals ease loneliness and boost <br>
+                  oxytocin—the love hormone.
+                </p>
+                <img style="width: 130px; height: 95px; margin-left: 70px; margin-top: 20px;" src="./image2/pet-dog.webp" alt="pets">
+            </div> <hr>
+
+
+            <div style="display: flex;">
+              <p>
+                <b>Mending fences</b> <br><br>
+                  In a society roiled by division, how can <br>
+                   we find common ground and build <br>
+                    relationships with those who don’t share <br>
+                     our views?
+              </p>
+
+              <img style="width: 130px; height: 95px; margin-left: 22px; margin-top: 20px;"  src="./image2/mending-fences.webp" alt="Mending fences">
+            </div> <hr>
+
+            <div style="display: flex;">
+              <p>
+                <b>Reaching out</b><br><br>
+                  Research offers new reasons to pick up <br>
+                  the phone and reconnect with that old <br>
+                  friend.
+              </p>
+
+              <img style="width: 130px; height: 95px; margin-left: 33px; margin-top: 20px;"  src="./image2/reaching-out.webp" alt="Reaching out">
+            </div> <hr>
+
+            <div style="display: flex;">
+              <p>
+                <b>Forgiveness can heal</b> <br><br>
+                  Forgiveness transcends mere spiritual <br>
+                  practice or good behavior—it fosters <br>
+                  good mental health.
+              </p>
+
+              <img style="width: 130px; height: 95px; margin-left: 43px; margin-top: 20px;"  src="./image2/forgiveness-h.webp" alt="Forgiveness can heal">
+            </div> <hr>
+          </div>
+        </section><br><br><br><br>
+
+        <section style="display: flex; justify-content: center; justify-content: space-evenly;">
+          <div style="margin-left: 45px; margin-top: 80px;">
+            <h4>INCUBATION</h4>
+            <h1 style="font-size: 50px;">In the lab</h1>
+            <p>
+              Learn more about the structure of microbes, <a href="#">the different phases of growth,</a> <br>
+              how they reproduce, and what byproducts they create.
+            </p>
+            <a style="color: black; font-size: 20px; text-decoration: none;" href="#"> <i style=" font-size: 25px;" class="fa-regular fa-circle-right"></i>
+              Explore the LabXchange video
+            </a>
+          </div>
+
+          <div>
+            <img style="width: 100%; height: 58vh; margin-left: -30px;" src="./image/lab-image.webp" alt="">
+          </div>
+        </section><br><br><br>
+
+        <section style=" background-color: rgb(218, 206, 198); height: 60vh; 
+         
+        ">
+          <div style="margin-left: 160px; display: flex;">
+            <div style="margin-top: 80px;">
+              <p>
+               YOU MAY ALSO LIKE
+              </p>
+              <h1 style="font-size: 50px;">
+                Related In Focus topics
+              </h1>
+            </div>
+  
+            <div style="margin-top: 80px; margin-left: 120px;">
+              <a href=""><h2>Healthy Living</h2></a><hr>
+
+              <a href=""><h2>Food</h2></a><hr>
+
+              <a href=""><h2>Climate Solutions</h2></a>
+            </div>
+          </div>
+        </section>
+
+        <section style="background-color: black; justify-content: center; height: 60vh;"><br><br><br>
+
+          <div style="display: flex; justify-content: center;">
+            <div style="text-align: center; margin-right: 100px;">
+              <p>
+                <b style="color: white;">Security & Brand</b>
+              </p>
+
+              <a style="color: gray;font-size: 20px;" href="#">Report Copyright Infringement </a><br><br>
+              <a style="color: gray;font-size: 20px;" href="#">Report Security Issue</a><br><br>
+              <a style="color: gray;font-size: 20px;" href="#">Trademark Notice</a>
+            </div>
+
+            <div style="text-align: center;">
+               <p><b style="color: white;">Website</b></p>
+               <a style="color: gray;font-size: 20px;" href="#">Accessibility</a><br><br>
+               <a style="color: gray;font-size: 20px;" href="">Digital Accessibility</a><br><br>
+               <a style="color: gray;font-size: 20px;" href="">Privacy Statement</a>
+            </div>
+
+            <div style="text-align: center;margin-left: 100px;">
+              <p><b style="color: white;">Get In Touch</b></p>
+              <a style="color: gray;font-size: 20px;" href="">Contact Harvard</a><br><br>
+              <a style="color: gray;font-size: 20px;" href="">Maps & Directions</a><br><br>
+              <a style="color: gray;font-size: 20px;" href="">Jobs</a>
+            </div>
+          </div>
+
+
+          <div style="display: grid; text-align: center; justify-content: center; margin-top: -70px;margin-left: 100px;">
+            <h1>HARVARD</h1>
+            <h3>UNIVERSITY</h3>
+            <img style="width: 200px;" src="./image/Harvard-logo.svg" alt="">
+          </div>
+
+          <div style="display: flex;justify-content: space-evenly;margin-top: -50px; ">
+            <div style="margin-left: -90px;">
+              <p style="color: gray;font-size: 20px;"> © 2023 The President and Fellows of Harvard College </p>
+            </div>
+
+            <div style=" justify-content: space-evenly; display: flex; margin-left: 30%;">
+              <p style="margin-left: 20px;">
+                <a style="color: gray;font-size: 20px;" href="https://www.facebook.com/Harvard/">Facebook</a> 
+              </p>
+
+              <p style="margin-left: 20px;">
+                <a style="color: gray;font-size: 20px;" href="https://twitter.com/harvard">Twitter</a>
+              </p>
+
+              <p style="margin-left: 20px;">
+                <a style="color: gray;font-size: 20px;" href="https://www.instagram.com/harvard/">Instagram</a>
+              </p>
+
+              <p style="margin-left: 20px;">
+                <a style="color: gray;font-size: 20px;" href="https://www.youtube.com/harvard">YouTube</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+    </div>
+
+
+
+    <script>
+        const menu = document.querySelector('.menu_bar');
+        const mobile = document.querySelector('.mobile-nav');
+
+        menu.addEventListener('click',function() {
+            menu.classList.toggle('is-active');
+            mobile.classList.toggle('is-active');
+        })
+    </script>
+
+  <script src="https://kit.fontawesome.com/468e2a8efa.js" crossorigin="anonymous"></script>
+
+  <script src="https://kit.fontawesome.com/468e2a8efa.js" crossorigin="anonymous"></script>
+</body>
+</html>
