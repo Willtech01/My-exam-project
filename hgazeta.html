@@ -11,8 +11,7 @@
         background-size: cover;
         background-color: rgb(5, 77, 185);
         background-image: url(./image2/graduation\ image.webp)
-        
-        
+                
     }
 
     form{
@@ -23,7 +22,7 @@
         margin-left: 31%;
         background-color: whitesmoke;
         width: 35%;
-        height: 82vh;
+        height: 85vh;
         border-radius: 10px;
     }
 
@@ -41,7 +40,63 @@
     }
     label{
         font-size: 20px
+    }
+
+    .home-but{
+        margin-top: -90vh;
+        margin-left: -70px;
+    }
+
+    @media screen and (max-width: 768px) {
+      
+        body{
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        margin: auto;
+        justify-content: center;
+        background-color: rgb(5, 77, 185);
+        background-image: url(./image2/graduation\ image.webp)  
+          
+    }
+
+    form{
+        /* text-align: center;j */
+        margin-top: 20vh;
+        margin: auto;
+        background-color: whitesmoke;
+        width: 80%;
+        height: 90vh;
+        border-radius: 10px;
+        margin-top: -5px;
+    }
+
+    button{
+        text-align: center;
+        font-size: 24px;
+        margin: auto;
+        margin-left: 38px;
+        color: white;
+        background-color: #252222;
+
+    }
+
+    input{
+        margin-left: -20px;
+        width: 80%;
+        height: 3vh;
+    }
+    label{
+        margin-left: -20px;
+        font-size: 20px
         
+    }
+
+    .home-but{
+        margin-top: -97vh;
+        margin-left: -30px;
+    }
+
 
     }
 
@@ -50,7 +105,7 @@
     <!-- coding -->
 
    
-    <br><br><br>
+    <br><br>
    
 <form>
 
@@ -63,33 +118,33 @@
 
     <div style="margin-left: 25%;">
         <label for="UserName">UserName*</label> <br>
-        <input id="write1" type="text"><br><br>
+        <input id="write1" type="text" required><br><br>
 
         <label for="SurName">SurName*</label><br>
-    <input id="write2" type="text"><br><br>
+    <input id="write2" type="text" required><br><br>
 
     <label  for="Other Names">Other Names*</label><br>
-    <input id="write3" name="moses" type="text"><br><br>
+    <input id="write3" name="moses" type="text" required><br><br>
 
     <label  for="Phone">Phone*</label><br>
-    <input id="write4" type="text"><br><br>
+    <input id="write4" type="number" ><br><br>
 
     
 
     <label for="Email">Email*</label><br>
-        <input id="write5" type="text"><br><br>
+        <input id="write5" type="email"><br><br>
 
         <label for="PassWord">PassWord*</label><br>
-    <input id="write6" type="text"><br><br>
+    <input id="write6" type="password"><br><br>
 
     <label  for="Confirm Password">Confirm Password*</label><br>
-    <input id="write7" name="moses" type="text"><br><br>
+    <input id="write7" name="moses" type="password"><br><br>
 
     <button onclick="showall()" class="btn">Submit</button>
     </div>
     </form>
 
-    <div style="margin-top: -90vh;margin-left: -70px;">
+    <div class="home-but">
         <button style="border-radius: 5px; background-color: red;">
             <a style=" text-decoration: none; font-size: 25px; color: aliceblue;;
             " href="./index1.html">Home</a>
@@ -107,8 +162,8 @@
    let Email = document.getElementById('write5').value;
    let PassWord = document.getElementById('write6').value;
    let ConfirmPassword = document.getElementById('write7').value;
-    alert(`${firstName} \n ${lastName} \n ${passWord} \n ${userName} \n ${Email} \n${PassWord} \n${ConfirmPassword}`);
-    alert('Details saved successfuly')
+    // alert(`${firstName} \n ${lastName} \n ${passWord} \n ${userName} \n ${Email} \n${PassWord} \n${ConfirmPassword}`);
+    // alert('Details saved successfuly')
 
    }
  

@@ -72,11 +72,102 @@ p{
   margin-left: 80px;
 }
 
+.home-butt{
+  display: flex; 
+  justify-content: end;
+  margin-top: -80px;
+  margin-right: 80px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  body{ 
+        
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgb(5, 77, 185);
+        background-image: url(./image/lab-image.webp)
+        
+        
+    }
+
+.all-docs{
+  margin-top: 50px;
+}
+
+h1{
+    text-align: center;
+    margin-top: -1px;
+    font-size: 30px;
+    color: wheat;
+}
+
+form{
+  
+    background-color: gainsboro;
+    /* margin: auto; */
+    width: 80%;
+    /* height: 75vh; */
+    border-radius: 10px;
+  
+}
+
+input{
+    width: 65%;
+    height: 4vh;
+    border-radius: 5px;
+    border: none;
+   
+}
+
+h2{
+    padding-top: 7%;
+    font-size: 25px;
+    text-align: center;
+   
+}
+
+p{
+    font-size: 20px;
+    text-align: none;
+}
+
+#butt {
+  color: white;
+  background-color: rgb(5, 77, 185);
+  border-radius: 5px;
+  height: 4vh;
+  width: 65%;
+  border: none;
+}
+
+.abutt{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+.home-butt{
+  display: flex; 
+  justify-content: end;
+  margin-top: -94px;
+  margin-right: 78%;
+}
+
+
+
+}
+
 </style>
 <body>
+
+  <div class="all-docs">
+    
     <h1>Harvard University</h1>
 
-    <form action="">
+    <form>
 <h2>Web Login Service</h2>
 <p>Please enter your Harvard credentials to <br> access.</p>
 
@@ -85,7 +176,7 @@ p{
             </div>
             <div class="col-9">
               <input
-              type="build"
+              type="text" required
               class="form-control"
               id=""
               placeholder="Username"
@@ -98,10 +189,10 @@ p{
             </div>
             <div class="col-9">
               <input
-              type="build"
+              type="email"
               class="form-control"
               id=""
-              placeholder="Phone number"
+              placeholder="Email"
             />
             </div>
           </div><br><br>
@@ -111,10 +202,10 @@ p{
             </div>
             <div class="col-9">
               <input
-              type="build"
+              type="password"
               class="form-control"
               id=""
-              placeholder="Email"
+              placeholder="Password"
             />
             </div>
           </div><br><br>
@@ -124,11 +215,12 @@ p{
 
           <div class="links">
             <a style="color: blue;" href="./hgazeta.html">Registration of a new Applicant</a> <br><br>
-            <a href="#">Password recovery</a>
+            <a href="./index1.html">Password recovery</a>
           </div>
     </form>
+  </div>
 
-    <div style="display: flex; justify-content: end; margin-top: -80px;margin-right: 80px;">
+    <div class="home-butt">
                     
      <div style="margin-top: -80vh;">
       <button style="border-radius: 5px; background-color: red;">
@@ -139,14 +231,14 @@ p{
 
     <script>
 
-    function show(){
-          alert('Sign in Successfully')
-  }
+  //   function show(){
+  //         alert('Sign in Successfully')
+  // }
     </script>
 
 
-<!-- 
-<label for="First Name">First Name*</label>
+
+<!-- <label for="First Name">First Name*</label>
 <input type="text"><br><br>
 <label for="lstname">Last Name*</label>
 <input onclick="write()" type="text"><br><br>
@@ -154,7 +246,7 @@ p{
 <input type="text"><br><br>
 <label onclick="write()" for="password">Password*</label>
 <input type="text"><br><br>
-<button onclick="showall()" class="btn">Submit</button>
+<button onclick="showall()" class="btn">Submit</button>/
 </form> -->
 
 
