@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HARVARD UNIVERSITY</title>
+    <title>Harvard University</title>
 </head>
 <style>
   
@@ -54,11 +54,13 @@
     min-height: 100%;
     z-index: 98;
     /* background-color: #f1fef4; */
+    background-color: black;
     font-family: "Poppins", sans-serif;
     font-weight: bolder;
     padding-top: 10px;
     margin-top: 35px;
     opacity: 0.9;
+    height: 100vh;
   }
   .mobile-nav.is-active {
     right: 0;
@@ -66,13 +68,14 @@
   .mobile-nav a {
     display: grid;
     margin: 15px;
-    color: #011b33;
+    /* color: #011b33; */
+    color: #fff;
     text-decoration: none;
     margin-top: 5px;
     padding: 7px 2px;
-    justify-content: end;
-    margin-right: 100px;
-    font-size: 20px;
+    /* justify-content: end; */
+    margin-left: 50px;
+    font-size: 40px;
   }
   /* #log {
     color: rgb(58, 204, 58);
@@ -267,7 +270,7 @@
   animation-iteration-count: 1;
 }
 
-@keyframes move-up {
+/* @keyframes move-up {
 0%{
   opacity: 0;
  transform: translateY(100%);
@@ -283,7 +286,7 @@
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
-}
+} */
 
 @keyframes move-up {
 0%{
@@ -616,7 +619,7 @@ font-size: 20px;
   .menu_bar.is-active .bar {
     opacity: 0;
   }
-  .mobile-nav {
+  /* .mobile-nav {
     display: block;
     position: fixed;
     right: 0;
@@ -625,26 +628,47 @@ font-size: 20px;
     font-size: 10px;
     min-height: 1%;
     z-index: 9;
-    /* background-color: #f1fef4; */
+    background-color: #f1fef4;
     font-family: "Poppins", sans-serif;
     font-weight: bolder;
     padding-top: 10px;
-    margin-top: 15px;
+    margin-top: 15px; 
     opacity: 0.9;
+  } */
+   
+  .mobile-nav {
+    display: block;
+    position: fixed;
+    right: 0;
+    right: -100%;
+    width: 100%;
+    font-size: 12px;
+    min-height: 100%;
+    z-index: 98;
+    /* background-color: #f1fef4; */
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    padding-top: 10px;
+    margin-top: 35px;
+    opacity: 0.9;
+    height: 100vh;
   }
+
   .mobile-nav.is-active {
     right: 0;
   }
   .mobile-nav a {
     display: flex;
     margin: 1px;
-    color: red;
+    color: white;
     text-decoration: none;
     margin-top: 1px;
     padding: 3px 1px;
-    justify-content: end;
-    margin-right: 100px;
-    font-size: 16px;
+    /* justify-content: end; */
+    margin-left: 20px;
+    font-size: 35px;
+    
   }
   /* #log {
     color: rgb(58, 204, 58);
